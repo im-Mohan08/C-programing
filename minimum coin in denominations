@@ -1,0 +1,49 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int amt,c1,c2,c3,c4,q1,q2,q3,q4,r1,r2,r3,r4;
+    c1=10;
+    c2=5;
+    c3=2;
+    c4=1;
+    scanf("%d",&amt);
+    if(amt>=c1)
+    {
+        q1=amt/c1;
+        printf("10=%d\n",q1);
+        r1=amt%c1;
+       if(r1>=c2)
+        {
+            q2=r1/c2;
+            printf("5=%d\n",q2);
+            r2=r1%c2;
+            if(r1>=c3)
+            { 
+                
+                q3=r2/c3;
+              if(q3!=0)
+                {
+                printf("2=%d\n",q3);
+                    
+                }
+                else if(r2>=c4)
+                {
+                    q4=r2%c3;
+                    printf("1=%d\n",q4);
+                }
+             
+            }
+            
+        }
+        else
+        {
+        printf("%d=%d",r1,r1%c2);
+        }
+        
+        
+    }
+    
+    return 0;
+}
